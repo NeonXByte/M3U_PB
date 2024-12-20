@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f4f9 0%, #e8e8f3 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.add-btn {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.download-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.clear-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(110%);
+}
+
+.playlist-output {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+    font-family: monospace;
+}
+
+.channel-count {
+    text-align: center;
+    color: #7f8c8d;
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}
