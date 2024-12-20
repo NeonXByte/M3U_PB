@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3U Playlist Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>M3U Playlist Maker</h1>
+    <div class="input-group">
+        <label>Channel Name</label>
+        <input type="text" id="channelName" placeholder="Enter channel name">
+    </div>
+    <div class="input-group">
+        <label>Channel Logo URL</label>
+        <input type="text" id="channelLogo" placeholder="Channel logo URL">
+    </div>
+    <div class="input-group">
+        <label>Channel Group</label>
+        <input type="text" id="channelGroup" placeholder="Channel group name">
+    </div>
+    <div class="input-group">
+        <label>Stream URL</label>
+        <input type="text" id="channelUrl" placeholder="Channel stream URL">
+    </div>
+    <button class="add-btn" onclick="addChannel()">Add Channel</button>
+    <div class="channel-count" id="channelCount">Total Channels: 0</div>
+    <div class="playlist-output">
+        <textarea id="playlist" readonly placeholder="M3U Playlist Output"></textarea>
+    </div>
+    <button class="download-btn" onclick="downloadPlaylist()">Download Playlist</button>
+    <button class="clear-btn" onclick="clearPlaylist()">Clear Playlist</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
